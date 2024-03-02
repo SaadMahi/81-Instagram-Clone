@@ -1,4 +1,11 @@
-import { Avatar, Box, Flex, Link, Tooltip } from "@chakra-ui/react";
+import {
+  Avatar,
+  Box,
+  Flex,
+  Link,
+  Tooltip,
+  useColorMode,
+} from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import {
   CreatePostLogo,
@@ -10,8 +17,12 @@ import {
 
 import { AiFillHome } from "react-icons/ai";
 import { BiLogOut } from "react-icons/bi";
+import { CiDark } from "react-icons/ci";
 
 const Sidebar = () => {
+  // dark mode
+  const { toggleColorMode } = useColorMode();
+
   const sidebarItems = [
     {
       icon: <AiFillHome size={25} />,
@@ -34,6 +45,9 @@ const Sidebar = () => {
       icon: <Avatar size={"sm"} name="Burak Orkmez" src="/profilepic.png" />,
       text: "Profile",
       link: "/asaprogrammer",
+    },
+    {
+      icon: <CiDark onClick={toggleColorMode} />,
     },
   ];
 

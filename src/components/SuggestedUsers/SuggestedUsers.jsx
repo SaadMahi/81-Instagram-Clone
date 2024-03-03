@@ -30,14 +30,14 @@ const SuggestedUsers = () => {
           avatar="https://bit.ly/dan-abramov"
         />
         <SuggestedUser
-          name="Dan Abrahmov"
-          followers={1392}
-          avatar="https://bit.ly/dan-abramov"
+          name="Ryan Florence"
+          followers={567}
+          avatar="https://bit.ly/ryan-florence"
         />
         <SuggestedUser
-          name="Dan Abrahmov"
+          name="Christian Nwamba"
           followers={1392}
-          avatar="https://bit.ly/dan-abramov"
+          avatar="https://bit.ly/vode-beast"
         />
 
         <Box alignSelf={"flex-start"} fontSize={12} color={"gray.500"} mt={5}>
